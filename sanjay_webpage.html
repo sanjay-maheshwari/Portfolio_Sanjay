@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sanjay Maheshwari | Academic Director & Researcher</title>
+    <meta name="description" content="Official portfolio and journal portal for Dr. Sanjay Maheshwari (Bhangdia). Director, BM Professional Institute.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // Slate 900
+                        accent: '#b45309', // Amber 700 (Bronze/Gold)
+                        paper: '#fdfbf7', // Warm white/paper tone
+                        surface: '#ffffff',
+                        subtle: '#64748b', // Slate 500
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Utilities */
+        body {
+            background-color: #fdfbf7; /* Paper color */
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+            background: #e2e8f0;
+        }
+        .journal-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body class="text-slate-700 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex flex-col">
+                <span class="text-xl font-serif font-bold text-primary tracking-tight">Dr. Sanjay Maheshwari</span>
+                <span class="text-xs text-accent font-medium uppercase tracking-widest">Academic Portfolio</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-10 font-medium text-sm text-slate-600">
+                <a href="#about" class="hover:text-accent transition-colors">About</a>
+                <a href="#experience" class="hover:text-accent transition-colors">Experience</a>
+                <a href="#education" class="hover:text-accent transition-colors">Qualifications</a>
+                <a href="#research" class="hover:text-accent transition-colors">Publications</a>
+                <a href="#contact" class="text-primary font-bold hover:text-accent transition-colors">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-xl text-primary">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b p-6 space-y-4 shadow-xl absolute w-full">
+            <a href="#about" class="block hover:text-accent">About</a>
+            <a href="#experience" class="block hover:text-accent">Experience</a>
+            <a href="#education" class="block hover:text-accent">Qualifications</a>
+            <a href="#research" class="block hover:text-accent">Publications</a>
+            <a href="#contact" class="block font-bold text-accent">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-24 relative overflow-hidden">
+        <!-- Background Decor -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-slate-100 -skew-x-12 translate-x-20 z-0"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-3/5">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-wide mb-6">
+                        <i class="fas fa-award"></i> Director & Academic Visionary
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-serif font-bold text-primary leading-tight mb-6">
+                        Bridging Academia <br> <span class="text-slate-400 italic">&</span> Industry Excellence
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl">
+                        Dr. Sanjay Maheshwari (Bhangdia) combines 20 years of pedagogical expertise with 16 years of industry leadership. Dedicated to innovation, mentorship, and holistic academic development.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#research" class="px-8 py-3 bg-primary text-white font-medium rounded-sm hover:bg-slate-800 transition shadow-lg">
+                            Browse Journal Archive
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border border-slate-300 text-primary font-medium rounded-sm hover:border-primary transition">
+                            Connect
+                        </a>
+                    </div>
+                    
+                    <!-- Socials -->
+                    <div class="mt-10 flex gap-6 text-slate-400">
+                        <a href="https://www.linkedin.com/in/Dr-sanjay-maheshwari/" target="_blank" class="hover:text-accent transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="https://www.facebook.com/sanjaymaheshwari13/" target="_blank" class="hover:text-accent transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" target="_blank" class="hover:text-accent transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <div class="h-6 w-px bg-slate-300"></div>
+                        <span class="text-sm font-serif italic text-accent">ISSN Journal Publisher</span>
+                    </div>
+                </div>
+                
+                <div class="md:w-2/5 relative">
+                    <div class="relative z-10">
+                        <!-- Image Frame -->
+                        <div class="p-2 bg-white shadow-2xl rotate-2 rounded-sm">
+                             <img src="img1.png" alt="Dr. Sanjay Maheshwari" class="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition duration-700">
+                        </div>
+                    </div>
+                    <!-- Decorative Elements -->
+                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-accent/20 rounded-full blur-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Key Statistics Strip -->
+    <div class="bg-primary text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-slate-700/50">
+                <div class="text-center px-4">
+                    <div class="text-4xl font-serif font-bold text-accent mb-1">20+</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400">Years Teaching</div>
+                </div>
+                <div class="text-center px-4">
+                    <div class="text-4xl font-serif font-bold text-accent mb-1">16+</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400">Years Industry</div>
+                </div>
+                <div class="text-center px-4">
+                    <div class="text-4xl font-serif font-bold text-accent mb-1">597</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400">API Score</div>
+                </div>
+                <div class="text-center px-4">
+                    <div class="text-4xl font-serif font-bold text-accent mb-1">135+</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400">Projects Guided</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row gap-16 items-start">
+            <div class="lg:w-1/2">
+                <h4 class="text-accent font-bold uppercase tracking-widest text-sm mb-2">Biography</h4>
+                <h2 class="text-4xl font-serif font-bold text-primary mb-8">A Visionary Leader in Education</h2>
+                <div class="prose prose-slate text-slate-600 leading-relaxed text-justify">
+                    <p class="mb-4">
+                        I am committed to academic excellence, student success, and institutional growth. My approach bridges the gap between theoretical knowledge and practical industry application.
+                    </p>
+                    <p class="mb-6">
+                        Currently serving as the <strong>Director at BM Professional Institute</strong>, I champion positive inter-professional relationships and integrate digital learning tools to enhance interactive pedagogy. I actively mentor students in building critical skills such as digital literacy, problem-solving, and adaptability for today's dynamic professional landscape.
+                    </p>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex items-center gap-3 p-4 bg-white border border-slate-100 shadow-sm rounded-sm">
+                        <div class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-accent"><i class="fas fa-seedling"></i></div>
+                        <span class="font-medium text-primary">Holistic Development</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-4 bg-white border border-slate-100 shadow-sm rounded-sm">
+                        <div class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-accent"><i class="fas fa-university"></i></div>
+                        <span class="font-medium text-primary">Institutional Growth</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-4 bg-white border border-slate-100 shadow-sm rounded-sm">
+                        <div class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-accent"><i class="fas fa-book-open"></i></div>
+                        <span class="font-medium text-primary">Curriculum Design</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-4 bg-white border border-slate-100 shadow-sm rounded-sm">
+                        <div class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-accent"><i class="fas fa-users"></i></div>
+                        <span class="font-medium text-primary">Student Mentorship</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 bg-white p-8 shadow-xl border-t-4 border-accent rounded-sm">
+                <h3 class="text-2xl font-serif font-bold text-primary mb-6">Core Competencies</h3>
+                <ul class="space-y-6">
+                    <li class="flex group">
+                        <div class="mt-1 mr-4 text-accent opacity-50 group-hover:opacity-100 transition">
+                            <i class="fas fa-check-circle text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary group-hover:text-accent transition">Ph.D. Guide & Research Mentor</h4>
+                            <p class="text-sm text-slate-500 mt-1">Registered Guide (DAVV Indore). Mentoring doctoral candidates in advanced research methodology and dissertation development.</p>
+                        </div>
+                    </li>
+                    <li class="flex group">
+                        <div class="mt-1 mr-4 text-accent opacity-50 group-hover:opacity-100 transition">
+                            <i class="fas fa-check-circle text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary group-hover:text-accent transition">Program Development</h4>
+                            <p class="text-sm text-slate-500 mt-1">Designing and implementing impactful academic programs that align with NEP-2020 and industry standards.</p>
+                        </div>
+                    </li>
+                    <li class="flex group">
+                        <div class="mt-1 mr-4 text-accent opacity-50 group-hover:opacity-100 transition">
+                            <i class="fas fa-check-circle text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary group-hover:text-accent transition">Wellness & Yoga Expert</h4>
+                            <p class="text-sm text-slate-500 mt-1">Reiki Grand Master and certified Yoga Instructor. Organizing wellness initiatives for faculty and students.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h4 class="text-accent font-bold uppercase tracking-widest text-sm mb-2">Professional Journey</h4>
+                <h2 class="text-4xl font-serif font-bold text-primary">Career Timeline</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                
+                <!-- Academic Column -->
+                <div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="h-px bg-slate-200 flex-1"></div>
+                        <h3 class="text-xl font-serif font-bold text-primary"><i class="fas fa-chalkboard-teacher mr-2 text-accent"></i> Academic Roles</h3>
+                        <div class="h-px bg-slate-200 flex-1"></div>
+                    </div>
+
+                    <div class="relative timeline-line space-y-12 pl-4">
+                        <!-- Item -->
+                        <div class="relative pl-8 group">
+                            <div class="absolute left-[15px] top-1 w-3 h-3 bg-white border-2 border-accent rounded-full group-hover:bg-accent transition"></div>
+                            <span class="text-xs font-bold text-accent uppercase tracking-wide">May 2023 – Present</span>
+                            <h4 class="text-lg font-bold text-primary mt-1">Director</h4>
+                            <p class="text-sm font-medium text-slate-700">BM Professional Institute, Indore</p>
+                            <p class="text-sm text-slate-500 mt-2 leading-relaxed">Spearheading student affairs, faculty development, and industry bridging programs.</p>
+                        </div>
+                        <!-- Item -->
+                        <div class="relative pl-8 group">
+                            <div class="absolute left-[15px] top-1 w-3 h-3 bg-white border-2 border-slate-300 rounded-full group-hover:border-accent transition"></div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wide">Oct 2021 – May 2023</span>
+                            <h4 class="text-lg font-bold text-primary mt-1">Associate Professor</h4>
+                            <p class="text-sm font-medium text-slate-700">Indore Institute of Law (Idyllic Institute)</p>
+                        </div>
+                        <!-- Item -->
+                        <div class="relative pl-8 group">
+                            <div class="absolute left-[15px] top-1 w-3 h-3 bg-white border-2 border-slate-300 rounded-full group-hover:border-accent transition"></div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wide">2019 - 2021</span>
+                            <h4 class="text-lg font-bold text-primary mt-1">Associate Professor</h4>
+                            <p class="text-sm font-medium text-slate-700">IIMR, Rau</p>
+                            <p class="text-sm text-slate-500 mt-1">Syndicate In-charge, Exam Cell, Placement Cell.</p>
+                        </div>
+                         <!-- Item -->
+                         <div class="relative pl-8 group">
+                            <div class="absolute left-[15px] top-1 w-3 h-3 bg-white border-2 border-slate-300 rounded-full group-hover:border-accent transition"></div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wide">2011 - 2019</span>
+                            <h4 class="text-lg font-bold text-primary mt-1">Assistant Professor (HOD)</h4>
+                            <p class="text-sm font-medium text-slate-700">Vishisht School of Management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry Column -->
+                <div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="h-px bg-slate-200 flex-1"></div>
+                        <h3 class="text-xl font-serif font-bold text-primary"><i class="fas fa-briefcase mr-2 text-accent"></i> Industry Roles</h3>
+                        <div class="h-px bg-slate-200 flex-1"></div>
+                    </div>
+
+                    <div class="relative timeline-line space-y-12 pl-4">
+                        <!-- Item -->
+                        <div class="relative pl-8 group">
+                            <div class="absolute left-[15px] top-1 w-3 h-3 bg-white border-2 border-slate-400 rounded-full group-hover:border-accent transition"></div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wide">5 Years</span>
+                            <h4 class="text-lg font-bold text-primary mt-1">Assist Prog. & Accounting</h4>
+                            <p class="text-sm font-medium text-slate-700">Pharmawell Centre, Indore</p>
+                        </div>
+                        <!-- Item -->
+                        <div class="relative pl-8 group">
+                            <div class="absolute left-[15px] top-1 w-3 h-3 bg-white border-2 border-slate-300 rounded-full group-hover:border-accent transition"></div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wide">3.3 Years</span>
+                            <h4 class="text-lg font-bold text-primary mt-1">Center Head</h4>
+                            <p class="text-sm font-medium text-slate-700">Flash Academy</p>
+                        </div>
+                        <!-- Item -->
+                        <div class="relative pl-8 group">
+                            <div class="absolute left-[15px] top-1 w-3 h-3 bg-white border-2 border-slate-300 rounded-full group-hover:border-accent transition"></div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wide">3 Years</span>
+                            <h4 class="text-lg font-bold text-primary mt-1">Director</h4>
+                            <p class="text-sm font-medium text-slate-700">Balaji Computer</p>
+                        </div>
+                         <!-- Item -->
+                         <div class="relative pl-8 group">
+                            <div class="absolute left-[15px] top-1 w-3 h-3 bg-white border-2 border-slate-300 rounded-full group-hover:border-accent transition"></div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wide">2 Years</span>
+                            <h4 class="text-lg font-bold text-primary mt-1">Software Developer (COBOL)</h4>
+                            <p class="text-sm font-medium text-slate-700">Prompt Software</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 bg-slate-50 border-y border-slate-200">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h4 class="text-accent font-bold uppercase tracking-widest text-sm mb-2">Qualifications</h4>
+                <h2 class="text-4xl font-serif font-bold text-primary">Academic Credentials</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- PhD Card (Featured) -->
+                <div class="bg-white p-8 shadow-lg rounded-sm border-t-4 border-accent col-span-1 md:col-span-2 lg:col-span-1 flex flex-col justify-center">
+                    <div class="w-12 h-12 bg-accent/10 text-accent flex items-center justify-center rounded-full mb-4 text-xl">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary">Ph.D.</h3>
+                    <p class="text-sm text-slate-500 mb-4">Pacific University, Udaipur (2017)</p>
+                    <p class="text-slate-600 italic text-sm border-l-2 border-slate-200 pl-4">
+                        "Opportunities, Challenges and Future Prospects of IT Sector Growth in Indore Region"
+                    </p>
+                </div>
+
+                <!-- Regular Card -->
+                <div class="bg-white p-6 shadow-sm border border-slate-100 rounded-sm hover:shadow-md transition">
+                    <h3 class="font-bold text-primary text-lg">MA (Psychology)</h3>
+                    <p class="text-xs text-slate-500 uppercase mt-1">Dr. Ambedkar University • 2022-24</p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm border border-slate-100 rounded-sm hover:shadow-md transition">
+                    <h3 class="font-bold text-primary text-lg">MA (Yoga)</h3>
+                    <p class="text-xs text-slate-500 uppercase mt-1">DAVV, Indore • 74%</p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm border border-slate-100 rounded-sm hover:shadow-md transition">
+                    <h3 class="font-bold text-primary text-lg">MBA (IT)</h3>
+                    <p class="text-xs text-slate-500 uppercase mt-1">Global University • 61%</p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm border border-slate-100 rounded-sm hover:shadow-md transition">
+                    <h3 class="font-bold text-primary text-lg">MA (Drawing)</h3>
+                    <p class="text-xs text-slate-500 uppercase mt-1">DAVV, Indore • 67%</p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm border border-slate-100 rounded-sm hover:shadow-md transition">
+                    <h3 class="font-bold text-primary text-lg">M.Com (Taxation)</h3>
+                    <p class="text-xs text-slate-500 uppercase mt-1">DAVV, Indore</p>
+                </div>
+                
+                 <div class="bg-white p-6 shadow-sm border border-slate-100 rounded-sm hover:shadow-md transition">
+                    <h3 class="font-bold text-primary text-lg">PGDCA</h3>
+                    <p class="text-xs text-slate-500 uppercase mt-1">Vinayaka Mission University</p>
+                </div>
+
+                 <div class="bg-white p-6 shadow-sm border border-slate-100 rounded-sm hover:shadow-md transition">
+                    <h3 class="font-bold text-primary text-lg">Diploma in Yoga Ed.</h3>
+                    <p class="text-xs text-slate-500 uppercase mt-1">DAVV, Indore • 79%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section (The Journal Look) -->
+    <section id="research" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="mb-12 flex flex-col md:flex-row justify-between items-end">
+                <div>
+                    <h4 class="text-accent font-bold uppercase tracking-widest text-sm mb-2">Digital Repository</h4>
+                    <h2 class="text-4xl font-serif font-bold text-primary">Research & Publications</h2>
+                    <p class="text-slate-500 mt-2">ISSN Journals, ISBN Papers, and Academic Books.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                   <div class="relative">
+                       <input type="text" placeholder="Search archive..." class="pl-10 pr-4 py-2 border border-slate-300 rounded-sm text-sm focus:border-accent outline-none w-64">
+                       <i class="fas fa-search absolute left-3 top-2.5 text-slate-400 text-xs"></i>
+                   </div>
+                </div>
+            </div>
+
+            <!-- Archive Tabs -->
+            <div class="flex flex-wrap border-b border-slate-200 mb-8 gap-8 text-sm font-medium tracking-wide">
+                <button class="pb-4 border-b-2 border-accent text-primary transition focus:outline-none tab-btn" onclick="openTab(event, 'journals')">
+                    ISSN Journals
+                </button>
+                <button class="pb-4 border-b-2 border-transparent text-slate-500 hover:text-primary transition focus:outline-none tab-btn" onclick="openTab(event, 'isbn-papers')">
+                    ISBN Papers
+                </button>
+                <button class="pb-4 border-b-2 border-transparent text-slate-500 hover:text-primary transition focus:outline-none tab-btn" onclick="openTab(event, 'books')">
+                    Books & Monographs
+                </button>
+                <button class="pb-4 border-b-2 border-transparent text-slate-500 hover:text-primary transition focus:outline-none tab-btn" onclick="openTab(event, 'seminars')">
+                    Seminars & Training
+                </button>
+            </div>
+
+            <!-- Content Area -->
+            <!-- Journals Tab (ISSN) -->
+            <div id="journals" class="tab-content animate-fade-in">
+                <div class="overflow-x-auto bg-white border border-slate-100 shadow-sm rounded-sm">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-xs uppercase font-bold text-slate-500 tracking-wider">
+                                <th class="p-4 w-32">Date</th>
+                                <th class="p-4">Paper Title</th>
+                                <th class="p-4">Journal / Publication</th>
+                                <th class="p-4 text-right">ISSN</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-sm text-slate-600">
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">24-08-2023</td>
+                                <td class="p-4 text-primary font-medium">Issues, Approaches, Challenges and Opportunities in the NEP 2020</td>
+                                <td class="p-4">Vidyawarta Peer-Reviewed Intl. Journal</td>
+                                <td class="p-4 text-right font-mono text-xs">2319-9318</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">01-07-2023</td>
+                                <td class="p-4 text-primary font-medium">An outline of "online" methods for promoting income in e-advertising</td>
+                                <td class="p-4">IJAAR (Intl. Jrnl of Advance & Applied Research)</td>
+                                <td class="p-4 text-right font-mono text-xs">2347-7075</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">15-06-2023</td>
+                                <td class="p-4 text-primary font-medium">The Study on Status of Farmer Producer Organization in India</td>
+                                <td class="p-4">Dogo Rangsang Research Journal</td>
+                                <td class="p-4 text-right font-mono text-xs">2347-7180</td>
+                            </tr>
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">01-04-2019</td>
+                                <td class="p-4 text-primary font-medium">AN ANALYTICAL STUDY BETWEEN KNOWLEDGE MANAGEMENT AND INFORMATION MANAGEMENT</td>
+                                <td class="p-4">Journal of Current Science <span class="text-xs bg-accent/10 text-accent px-1 rounded ml-1">UGC Approved</span></td>
+                                <td class="p-4 text-right font-mono text-xs">9726-001X</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">01-01-2019</td>
+                                <td class="p-4 text-primary font-medium">Stress Level of Teachers : A New Viewpoint</td>
+                                <td class="p-4">Journal of Current Science <span class="text-xs bg-accent/10 text-accent px-1 rounded ml-1">UGC Approved</span></td>
+                                <td class="p-4 text-right font-mono text-xs">9726-001X</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">13-10-2018</td>
+                                <td class="p-4 text-primary font-medium">A study of Dropout student "Jambudi" Indore Region</td>
+                                <td class="p-4">Shodh Pioneer "Repositioning Educational System"</td>
+                                <td class="p-4 text-right font-mono text-xs">0974-8954</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">13-10-2018</td>
+                                <td class="p-4 text-primary font-medium">A BPO SERVICES STARTUPS & GROWTH OF BPO INDUSTRY</td>
+                                <td class="p-4">Shodh Pioneer "Repositioning Educational System"</td>
+                                <td class="p-4 text-right font-mono text-xs">0974-8954</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">09-09-2018</td>
+                                <td class="p-4 text-primary font-medium">The Impact of E-Teaching in Economy & Business</td>
+                                <td class="p-4">Intl. Journal of Technology Research & Mgmt</td>
+                                <td class="p-4 text-right font-mono text-xs">2348-9006</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">11-01-2015</td>
+                                <td class="p-4 text-primary font-medium">Decision Making - A Study Online Marketing</td>
+                                <td class="p-4">Recent Advances & Innovation (RAIR-I)</td>
+                                <td class="p-4 text-right font-mono text-xs">2249-894X</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">26-09-2014</td>
+                                <td class="p-4 text-primary font-medium">Analytical Study of Training and Placement</td>
+                                <td class="p-4">Shodh Pioneer Journal of IT and Management</td>
+                                <td class="p-4 text-right font-mono text-xs">0974-8954</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">01-01-2014</td>
+                                <td class="p-4 text-primary font-medium">Revitalizing Ethics in Tourism</td>
+                                <td class="p-4">Intl. Jrnl of Research in Mgmt Science & Tech</td>
+                                <td class="p-4 text-right font-mono text-xs">2321-6174</td>
+                            </tr>
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">27-07-2013</td>
+                                <td class="p-4 text-primary font-medium">A Study of Hacking</td>
+                                <td class="p-4">Intl. Jrnl for Rapid Research in Eng. Tech</td>
+                                <td class="p-4 text-right font-mono text-xs">2455-4723</td>
+                            </tr>
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">27-04-2013</td>
+                                <td class="p-4 text-primary font-medium">A Study - Cyber Infrastructure Utilization and SOA Services</td>
+                                <td class="p-4">Recent Trends in Computer Science (Mantech)</td>
+                                <td class="p-4 text-right font-mono text-xs">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ISBN Papers Tab (New) -->
+            <div id="isbn-papers" class="tab-content hidden">
+                <div class="overflow-x-auto bg-white border border-slate-100 shadow-sm rounded-sm">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-xs uppercase font-bold text-slate-500 tracking-wider">
+                                <th class="p-4 w-32">Date</th>
+                                <th class="p-4">Title of Paper</th>
+                                <th class="p-4">Proceedings / Organized By</th>
+                                <th class="p-4 text-right">ISBN</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-sm text-slate-600">
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">01-01-2022</td>
+                                <td class="p-4 text-primary font-medium">FAST FOOD KE BARE ME UVA KI DHARNA : EK KHOJPURN ADDHYAN</td>
+                                <td class="p-4">INDIA AS AN EMERGING WORLD POWER</td>
+                                <td class="p-4 text-right font-mono text-xs">978-93-95016-99-5</td>
+                            </tr>
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">24-09-2016</td>
+                                <td class="p-4 text-primary font-medium">Air Pollution a threat for human health and sustainable development</td>
+                                <td class="p-4">Kalpaz Publication</td>
+                                <td class="p-4 text-right font-mono text-xs">978-93-5128-125-2</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">06-03-2014</td>
+                                <td class="p-4 text-primary font-medium">Internet Access with Security Issues</td>
+                                <td class="p-4">ICCT-2014 (Bhaddal Institutes)</td>
+                                <td class="p-4 text-right font-mono text-xs">-</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">24-01-2014</td>
+                                <td class="p-4 text-primary font-medium">Information Technology : Present Status & Future Prospects</td>
+                                <td class="p-4">Recent Traders in Business & Technology Mgmt</td>
+                                <td class="p-4 text-right font-mono text-xs">978-93-5137-920-1</td>
+                            </tr>
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">05-01-2014</td>
+                                <td class="p-4 text-primary font-medium">Challenges and Prospects of Ethical Hacking</td>
+                                <td class="p-4">Redefining Management Practices (S.P.D.M Arts)</td>
+                                <td class="p-4 text-right font-mono text-xs">978-9382795-85-8</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">08-04-2013</td>
+                                <td class="p-4 text-primary font-medium">A study of B-School Degree in Higher Education</td>
+                                <td class="p-4">Globalization of Higher Education in India</td>
+                                <td class="p-4 text-right font-mono text-xs">978-93-83083-04-6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+             <!-- Books Tab (Visual Grid) -->
+             <div id="books" class="tab-content hidden">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    
+                    <!-- Book 1 -->
+                    <div class="group bg-white rounded-sm shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 flex flex-col overflow-hidden">
+                        <div class="h-64 bg-slate-100 relative overflow-hidden flex items-center justify-center p-6">
+                            <!-- Replace src with actual book cover image -->
+                            <img src="https://placehold.co/300x450/1e293b/FFF?text=Business+Org" alt="Business Organization Book Cover" class="h-full w-auto shadow-xl transform group-hover:scale-105 transition duration-500 rotate-1">
+                            <div class="absolute bottom-0 left-0 w-full h-1 bg-accent"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-3">
+                                <span class="bg-accent/10 text-accent text-xs font-bold px-2 py-1 rounded uppercase tracking-wide">2022</span>
+                                <span class="text-xs font-mono text-slate-400">ISBN: 78-93-94032-62-0</span>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-primary mb-2 leading-tight group-hover:text-accent transition">Business Organization & Communication</h3>
+                            <p class="text-sm text-slate-500 mb-4">MP Hindi Granth Akadmi, Bhopal</p>
+                            <div class="mt-auto pt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-400 uppercase font-bold tracking-widest">
+                                <i class="fas fa-book"></i> Textbook
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="group bg-white rounded-sm shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 flex flex-col overflow-hidden">
+                        <div class="h-64 bg-slate-100 relative overflow-hidden flex items-center justify-center p-6">
+                             <!-- Replace src with actual book cover image -->
+                            <img src="https://placehold.co/300x450/b45309/FFF?text=Research+Approach" alt="Research Approach Book Cover" class="h-full w-auto shadow-xl transform group-hover:scale-105 transition duration-500 -rotate-1">
+                            <div class="absolute bottom-0 left-0 w-full h-1 bg-primary"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-3">
+                                <span class="bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded uppercase tracking-wide">Nov 2022</span>
+                                <span class="text-xs font-mono text-slate-400">ISBN: 978-91-987981-6-6</span>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-primary mb-2 leading-tight group-hover:text-accent transition">Multidisciplinary Approach in Research</h3>
+                            <p class="text-sm text-slate-500 mb-4">Red'Shine Publication, Stockholm</p>
+                            <div class="mt-auto pt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-400 uppercase font-bold tracking-widest">
+                                <i class="fas fa-globe"></i> International
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="group bg-white rounded-sm shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 flex flex-col overflow-hidden">
+                        <div class="h-64 bg-slate-100 relative overflow-hidden flex items-center justify-center p-6">
+                             <!-- Replace src with actual book cover image -->
+                            <img src="https://placehold.co/300x450/0f172a/FFF?text=Financial+Eco" alt="Financial Economics Book Cover" class="h-full w-auto shadow-xl transform group-hover:scale-105 transition duration-500 rotate-1">
+                            <div class="absolute bottom-0 left-0 w-full h-1 bg-emerald-500"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                             <div class="flex justify-between items-start mb-3">
+                                <span class="bg-emerald-50 text-emerald-600 text-xs font-bold px-2 py-1 rounded uppercase tracking-wide">Oct 2023</span>
+                                <span class="text-xs font-mono text-slate-400">ISBN: 93-92917-36-8</span>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-primary mb-2 leading-tight group-hover:text-accent transition">Financial Economics</h3>
+                            <p class="text-sm text-slate-500 mb-4">Infinity Publication</p>
+                            <div class="mt-auto pt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-400 uppercase font-bold tracking-widest">
+                                <i class="fas fa-chart-line"></i> Economics
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book 4 -->
+                    <div class="group bg-white rounded-sm shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 flex flex-col overflow-hidden">
+                        <div class="h-64 bg-slate-100 relative overflow-hidden flex items-center justify-center p-6">
+                             <!-- Replace src with actual book cover image -->
+                            <img src="book4.jpg" alt="Marketing BBA Book Cover" class="h-full w-auto shadow-xl transform group-hover:scale-105 transition duration-500 -rotate-1">
+                            <div class="absolute bottom-0 left-0 w-full h-1 bg-purple-500"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                             <div class="flex justify-between items-start mb-3">
+                                <span class="bg-purple-50 text-purple-600 text-xs font-bold px-2 py-1 rounded uppercase tracking-wide">May 2024</span>
+                                <span class="text-xs font-mono text-slate-400">BBA 2nd Yr</span>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-primary mb-2 leading-tight group-hover:text-accent transition">Marketing Management</h3>
+                            <p class="text-sm text-slate-500 mb-4">MP Hindi Granth Akadmi, Bhopal</p>
+                            <div class="mt-auto pt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-400 uppercase font-bold tracking-widest">
+                                <i class="fas fa-graduation-cap"></i> Academic
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book 5 -->
+                    <div class="group bg-white rounded-sm shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 flex flex-col overflow-hidden">
+                        <div class="h-64 bg-slate-100 relative overflow-hidden flex items-center justify-center p-6">
+                             <!-- Replace src with actual book cover image -->
+                            <img src="https://placehold.co/300x450/334155/FFF?text=Marketing+BCom" alt="Marketing BCom Book Cover" class="h-full w-auto shadow-xl transform group-hover:scale-105 transition duration-500 rotate-1">
+                            <div class="absolute bottom-0 left-0 w-full h-1 bg-rose-500"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                             <div class="flex justify-between items-start mb-3">
+                                <span class="bg-rose-50 text-rose-600 text-xs font-bold px-2 py-1 rounded uppercase tracking-wide">Jul 2024</span>
+                                <span class="text-xs font-mono text-slate-400">B.Com 3rd Yr</span>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-primary mb-2 leading-tight group-hover:text-accent transition">Marketing Management</h3>
+                            <p class="text-sm text-slate-500 mb-4">MP Hindi Granth Akadmi, Bhopal</p>
+                            <div class="mt-auto pt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-400 uppercase font-bold tracking-widest">
+                                <i class="fas fa-university"></i> Academic
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+             </div>
+
+              <!-- Seminars Tab (Detailed Table) -->
+            <div id="seminars" class="tab-content hidden">
+                 <div class="overflow-x-auto bg-white border border-slate-100 shadow-sm rounded-sm">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-xs uppercase font-bold text-slate-500 tracking-wider">
+                                <th class="p-4">Date</th>
+                                <th class="p-4">Topic / Event</th>
+                                <th class="p-4">Role / Organizer</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-sm text-slate-600">
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">01-01-2023</td>
+                                <td class="p-4 text-primary font-medium">IEEE Advancing Technology for Humanity</td>
+                                <td class="p-4">FDP</td>
+                            </tr>
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">05-05-2022</td>
+                                <td class="p-4 text-primary font-medium">International Kurukshetra (05-07 May)</td>
+                                <td class="p-4">Coordinator <span class="text-xs block text-slate-400">Idyllic Institute of Management</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">25-02-2022</td>
+                                <td class="p-4 text-primary font-medium">IPL 2k22 (25-27 Feb)</td>
+                                <td class="p-4">Organizer <span class="text-xs block text-slate-400">Idyllic Institute of Management</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">05-12-2021</td>
+                                <td class="p-4 text-primary font-medium">Induction Udaan (05-11 Dec)</td>
+                                <td class="p-4">Convener <span class="text-xs block text-slate-400">Idyllic Institute of Management</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">18-01-2020</td>
+                                <td class="p-4 text-primary font-medium">Ethics and Value of Research in Current Scenario</td>
+                                <td class="p-4">National Workshop <span class="text-xs block text-slate-400">RFI</span></td>
+                            </tr>
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">23-06-2017</td>
+                                <td class="p-4 text-primary font-medium">Quality Issues and Challenges in Teaching</td>
+                                <td class="p-4">National Seminar</td>
+                            </tr>
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">22-11-2013</td>
+                                <td class="p-4 text-primary font-medium">NSS Officer</td>
+                                <td class="p-4">Program Co-ordinator <span class="text-xs block text-slate-400">Vishisht School of Management</span></td>
+                            </tr>
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">17-12-2011</td>
+                                <td class="p-4 text-primary font-medium">Six Sigma Yellow Belt</td>
+                                <td class="p-4">Fanatic Academy of Quality <span class="text-xs block text-slate-400">Vishisht School of Management</span></td>
+                            </tr>
+                             <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 font-medium whitespace-nowrap">13-12-2011</td>
+                                <td class="p-4 text-primary font-medium">Six Sigma White Belt</td>
+                                <td class="p-4">Fanatic Academy of Quality <span class="text-xs block text-slate-400">Vishisht School of Management</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-primary text-slate-300 py-24 border-t-4 border-accent">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h4 class="text-accent font-bold uppercase tracking-widest text-sm mb-2">Collaboration</h4>
+                    <h2 class="text-4xl font-serif font-bold text-white mb-6">Get in Touch</h2>
+                    <p class="text-lg leading-relaxed mb-8">
+                        I am always open to discussing new research opportunities, guest lecture invitations, or academic collaborations.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 border border-slate-600 rounded-full flex items-center justify-center text-accent">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-400 uppercase tracking-wider">Phone</div>
+                                <div class="text-white font-medium">+91 9926611031</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 border border-slate-600 rounded-full flex items-center justify-center text-accent">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-400 uppercase tracking-wider">Email</div>
+                                <div class="text-white font-medium">sanjaybmcollege@gmail.com</div>
+                            </div>
+                        </div>
+                         <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 border border-slate-600 rounded-full flex items-center justify-center text-accent">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-400 uppercase tracking-wider">Location</div>
+                                <div class="text-white font-medium">Indore, Madhya Pradesh, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-sm shadow-2xl text-slate-800">
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-bold mb-2 text-primary">Full Name</label>
+                            <input type="text" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 focus:border-accent outline-none transition rounded-sm" placeholder="Dr. Jane Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2 text-primary">Email Address</label>
+                            <input type="email" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 focus:border-accent outline-none transition rounded-sm" placeholder="jane@university.edu">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2 text-primary">Subject</label>
+                            <select class="w-full px-4 py-3 bg-slate-50 border border-slate-200 focus:border-accent outline-none transition rounded-sm text-slate-600">
+                                <option>Research Collaboration</option>
+                                <option>Guest Lecture Inquiry</option>
+                                <option>Student Query</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2 text-primary">Message</label>
+                            <textarea class="w-full px-4 py-3 bg-slate-50 border border-slate-200 focus:border-accent outline-none transition rounded-sm" rows="4" placeholder="How can we collaborate?"></textarea>
+                        </div>
+                        <button type="button" onclick="alert('Message Sent!')" class="w-full bg-accent hover:bg-amber-700 text-white font-bold py-4 rounded-sm transition shadow-lg uppercase tracking-wider text-sm">
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-900">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm">&copy; 2024 Dr. Sanjay Maheshwari. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition text-xs uppercase">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition text-xs uppercase">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab Switching Logic
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove('animate-fade-in');
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" border-accent text-primary", " border-transparent text-slate-500");
+            }
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add('animate-fade-in');
+            evt.currentTarget.className = evt.currentTarget.className.replace(" border-transparent text-slate-500", " border-accent text-primary");
+        }
+
+        // Mobile Menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Animation CSS injection
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(5px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in {
+                animation: fadeIn 0.4s ease-out forwards;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
